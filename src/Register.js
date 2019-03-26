@@ -20,7 +20,7 @@ export default class Register extends Component {
   }
   handle = event => {
     let deneme = new Deneme(5, 6);
-    console.log(deneme.a);
+    
     this.setState({ [event.target.id]: event.target.value });
 
     event.preventDefault();
