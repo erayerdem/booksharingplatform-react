@@ -1,6 +1,11 @@
 import React, { Component } from "react";
-import { Button } from "react-bootstrap";
-import Service from "./Service";
+import Axios from "axios";
+import "./css/main.css";
+import { Deneme } from "./Deneme";
+import { Button } from 'primereact/button';
+import "primereact/resources/themes/nova-light/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
 
 export default class Register extends Component {
   constructor(props) {
@@ -14,8 +19,16 @@ export default class Register extends Component {
     };
   }
   handle = event => {
+    let deneme = new Deneme(5, 6);
+    console.log(deneme.a);
     this.setState({ [event.target.id]: event.target.value });
+
     event.preventDefault();
+  };
+  createUser = () => {
+    Axios.post("http://localhost:8080/api/users", this.state).then(response => {
+      console.log(response.status);
+    });
   };
   render() {
     return (
@@ -55,9 +68,11 @@ export default class Register extends Component {
           onChange={this.handle}
         />
         <br />
-        <Button type="submit" onClick={this.handlerequest} label="hello world">
-          Hello Worlds
+        <Button  variant="primary" type="submit" onClick={this.createUser} label="hello world">
+          
         </Button>
+        <Button label="Save" />
+ 
       </div>
     );
   }
