@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React,{Component } from "react";
 import Axios from "axios";
-import "./css/main.css";
-import { Deneme } from "./Deneme";
 import { Button } from 'primereact/button';
 import "primereact/resources/themes/nova-light/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
+import Deneme from "./Deneme";
 
 export default class Register extends Component {
   constructor(props) {
@@ -19,8 +18,9 @@ export default class Register extends Component {
     };
   }
   handle = event => {
-    let deneme = new Deneme(5, 6);
     
+    let deneme=new Deneme(5,6);
+    console.log(deneme.a);
     this.setState({ [event.target.id]: event.target.value });
 
     event.preventDefault();
@@ -33,6 +33,7 @@ export default class Register extends Component {
   render() {
     return (
       <div className="Register">
+        <h1>{this.props.name}</h1>
         <input
           type="text"
           id="name"
@@ -68,8 +69,7 @@ export default class Register extends Component {
           onChange={this.handle}
         />
         <br />
-        <Button  variant="primary" type="submit" onClick={this.createUser} label="hello world">
-          
+        <Button  variant="primary" type="submit" onClick={this.createUser} label="hello world">  
         </Button>
         <Button label="Save" />
  
