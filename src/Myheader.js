@@ -5,7 +5,7 @@ export  class MyHeader extends Component{
 navigateme = ()=>{
     this.props.history.push("/");
 
-}
+};
 
   render() {
     return (

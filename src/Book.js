@@ -6,7 +6,7 @@ import ReactFileReader from "react-file-reader";
 import Axios from "axios";
 import "./deneme.css";
 
-export default class Book extends Component {
+export default class Book extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,7 +18,7 @@ export default class Book extends Component {
     };
   }
   onChange = event => {
-    
+
     this.setState({ [event.target.id]: event.target.value });
     event.preventDefault();
   };
@@ -38,6 +38,7 @@ export default class Book extends Component {
   render() {
     return (
       <div>
+
         <div className="NewBook">
           Kitap Adı
           <InputText
