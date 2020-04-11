@@ -2,7 +2,7 @@
 
 #### Bir kitabı okuduktan sonra ihtiyaç sahiplerine o kitabı oluşturmanızı sağlayan platform.
 
-[![shields](https://img.shields.io/badge/made%20with-java-blue?logo=java&style=for-the-badge&logoColor=white)](https://golang.org) ![shields](https://img.shields.io/badge/License-apache-green.svg?logo=read-the-docs&style=for-the-badge&logoColor=white)
+[![shields](https://img.shields.io/badge/made%20with-javascript-blue?logo=javascript&style=for-the-badge&logoColor=white)](https://javascript.com) ![shields](https://img.shields.io/badge/License-apache-green.svg?logo=read-the-docs&style=for-the-badge&logoColor=white)
 
 #### Kütüphaneler
 
