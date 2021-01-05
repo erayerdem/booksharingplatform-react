@@ -7,7 +7,7 @@
     "node": "10.3.0"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "create-react-class": "^15.6.3",
     "primeicons": "^1.0.0",
